@@ -14,5 +14,6 @@
 #import <SDKTT/YXNetwork.h>
 #import <SDKTT/YXJsonView.h>
 #import <SDKTT/BaseTableViewController.h>
+#import <SDKTT/AnimatedAvatarView.h>
 
 #endif /* YXSDKTT_h */

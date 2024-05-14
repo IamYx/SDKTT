@@ -70,6 +70,10 @@
         };
     };
     [self.view addSubview:button2];
+    
+    AnimatedAvatarView *acatarView = [[AnimatedAvatarView alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(button2.frame) + 20, 80, 80)];
+    [acatarView setImage:[UIImage imageNamed:@"IMG_1187.JPG"]];
+    [self.view addSubview:acatarView];
 }
 
 - (void)showRequestData:(NSDictionary *)response {

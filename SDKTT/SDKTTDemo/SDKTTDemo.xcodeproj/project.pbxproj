@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A836DCAE2BF32A080099CE5B /* IMG_1187.JPG in Resources */ = {isa = PBXBuildFile; fileRef = A836DCAD2BF32A080099CE5B /* IMG_1187.JPG */; };
 		A8838E3C2BCE5D9300093EC9 /* SDKTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8838E3B2BCE5D9300093EC9 /* SDKTT.framework */; };
 		A8838E3D2BCE5D9300093EC9 /* SDKTT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8838E3B2BCE5D9300093EC9 /* SDKTT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8D212FC2BC27D1000043666 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D212FB2BC27D1000043666 /* AppDelegate.m */; };
@@ -35,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A836DCAD2BF32A080099CE5B /* IMG_1187.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1187.JPG; sourceTree = "<group>"; };
 		A8838E3B2BCE5D9300093EC9 /* SDKTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDKTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D212F72BC27D1000043666 /* SDKTTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKTTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D212FA2BC27D1000043666 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				A8D213442BC4E0B300043666 /* WKWebViewController.m */,
 				A8D213032BC27D1000043666 /* Main.storyboard */,
 				A8D213062BC27D1100043666 /* Assets.xcassets */,
+				A836DCAD2BF32A080099CE5B /* IMG_1187.JPG */,
 				A8D213082BC27D1100043666 /* LaunchScreen.storyboard */,
 				A8D2130B2BC27D1100043666 /* Info.plist */,
 				A8D2130C2BC27D1100043666 /* main.m */,
@@ -171,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A836DCAE2BF32A080099CE5B /* IMG_1187.JPG in Resources */,
 				A8D2130A2BC27D1100043666 /* LaunchScreen.storyboard in Resources */,
 				A8D213072BC27D1100043666 /* Assets.xcassets in Resources */,
 				A8D213052BC27D1000043666 /* Main.storyboard in Resources */,

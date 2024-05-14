@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A836DCAB2BF317150099CE5B /* AnimatedAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A836DCAA2BF317150099CE5B /* AnimatedAvatarView.m */; };
+		A836DCAC2BF317150099CE5B /* AnimatedAvatarView.h in Headers */ = {isa = PBXBuildFile; fileRef = A836DCA92BF317150099CE5B /* AnimatedAvatarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8D213292BC27E1E00043666 /* YXFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D213272BC27E1D00043666 /* YXFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8D2132A2BC27E1E00043666 /* YXFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D213282BC27E1D00043666 /* YXFileManager.m */; };
 		A8D213342BC37EB100043666 /* YXButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D213322BC37EB100043666 /* YXButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A836DCA92BF317150099CE5B /* AnimatedAvatarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedAvatarView.h; sourceTree = "<group>"; };
+		A836DCAA2BF317150099CE5B /* AnimatedAvatarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedAvatarView.m; sourceTree = "<group>"; };
 		A8D2131D2BC27D9B00043666 /* SDKTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDKTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D213272BC27E1D00043666 /* YXFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFileManager.h; sourceTree = "<group>"; };
 		A8D213282BC27E1D00043666 /* YXFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXFileManager.m; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				A8F2A0F92BC62D1400F64819 /* YXJsonView.m */,
 				A8F2A0FD2BC68CF700F64819 /* BaseTableViewController.h */,
 				A8F2A0FC2BC68CF700F64819 /* BaseTableViewController.m */,
+				A836DCA92BF317150099CE5B /* AnimatedAvatarView.h */,
+				A836DCAA2BF317150099CE5B /* AnimatedAvatarView.m */,
 				A8D213362BC3823B00043666 /* YXSDKTT.h */,
 			);
 			path = SDKTT;
@@ -100,6 +106,7 @@
 				A8D213372BC382A800043666 /* YXSDKTT.h in Headers */,
 				A8D2133A2BC385FB00043666 /* YXAlertView.h in Headers */,
 				A8D213412BC4D7C600043666 /* YXNetwork.h in Headers */,
+				A836DCAC2BF317150099CE5B /* AnimatedAvatarView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +183,7 @@
 				A8D2133B2BC385FB00043666 /* YXAlertView.m in Sources */,
 				A8D2132A2BC27E1E00043666 /* YXFileManager.m in Sources */,
 				A8F2A0FE2BC68CF700F64819 /* BaseTableViewController.m in Sources */,
+				A836DCAB2BF317150099CE5B /* AnimatedAvatarView.m in Sources */,
 				A8F2A0FB2BC62D1400F64819 /* YXJsonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
