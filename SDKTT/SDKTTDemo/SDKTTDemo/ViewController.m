@@ -12,6 +12,7 @@
 @interface ViewController ()
 
 @property (nonatomic, assign)NSInteger index;
+@property (nonatomic, strong)UILabel *outLabel;
 
 @end
 
@@ -71,9 +72,38 @@
     };
     [self.view addSubview:button2];
     
+    YXButton *button3 = [[YXButton alloc] initWithFrame:CGRectMake(140, 220, 100, 40)];
+    button3.name = @"输出字符";
+    button3.buttonBlock = ^{
+        [weakSelf outText];
+    };
+    [self.view addSubview:button3];
+    
     AnimatedAvatarView *acatarView = [[AnimatedAvatarView alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(button2.frame) + 20, 80, 80)];
     [acatarView setImage:[UIImage imageNamed:@"IMG_1187.JPG"]];
     [self.view addSubview:acatarView];
+    
+    _outLabel = [[UILabel alloc] initWithFrame:CGRectMake(20 + self.index * 10, 280 + self.index * 10, 360, 400)];
+    _outLabel.backgroundColor = [UIColor whiteColor];
+    _outLabel.numberOfLines = 0;
+    [self.view addSubview:_outLabel];
+    
+}
+
+- (void)outText {
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSInteger index = self.outLabel.text.length;
+        NSString *content = @"[2024-05-14 23:59:51:302] file:NIMApmEventRecorder.mm line: 98)<<<<Apm: addErrorToApmEventType:4 sn:5eaf074d-fd20-4bad-a0d3-3d794492bb1c error:<NIMSendMessageError: self.msgId=(null), self.clientId=5eaf074d-fd20-4bad-a0d3-3d794492bb1c, self.appkey=701994af7b0559728f9ee602a6f3c342, self.sdkVersion=9.6.4, self.messageTime=1715702391.300382, self.fromAccid=90040, self.toAccid=(null), self.deviceId=C9CA5CDD-2BF1-47F1-AA15-3D52FF66097F, self.eid=, self.sendMessageErrorSessionType=1, self.roomId=0, self.teamId=22822832067, self.result=0, self.failReason=>";
+        if (index < (content.length - 1)) {
+            NSString *a = [content substringToIndex:(index + 1)];
+            self.outLabel.text = a;
+            [self outText];
+        } else {
+            self.outLabel.text = content;
+        }
+    });
+    
 }
 
 - (void)showRequestData:(NSDictionary *)response {

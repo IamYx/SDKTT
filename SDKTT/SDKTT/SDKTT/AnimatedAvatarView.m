@@ -7,7 +7,22 @@
 
 #import "AnimatedAvatarView.h"
 
+@interface AnimatedAvatarView()
+
+@end
+
 @implementation AnimatedAvatarView
+
+- (void)didMoveToWindow {
+    [super didMoveToWindow];
+    
+    UIImage *image = _imageView.image;
+    for (UIView *view in self.subviews) {
+        [view removeFromSuperview];
+    }
+    [self setupViews];
+    _imageView.image = image;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
